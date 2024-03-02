@@ -19,6 +19,13 @@
 		16D3192A2B922AD700BE36DC /* VideoCaptureTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D319292B922AD700BE36DC /* VideoCaptureTypes.swift */; };
 		16D319322B92CFCF00BE36DC /* CoreAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D319312B92CFCF00BE36DC /* CoreAPIService.swift */; };
 		16D319342B92D08D00BE36DC /* CoreAPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D319332B92D08D00BE36DC /* CoreAPIType.swift */; };
+		8F888C5A2B934CE700832B2E /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C592B934CE700832B2E /* HistoryView.swift */; };
+		8F888C5C2B934CF600832B2E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C5B2B934CF600832B2E /* SettingsView.swift */; };
+		8F888C5E2B934F0500832B2E /* TranslatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C5D2B934F0500832B2E /* TranslatorView.swift */; };
+		8F888C612B9359C300832B2E /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C602B9359C300832B2E /* Title.swift */; };
+		8F888C642B936FE600832B2E /* HistoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C632B936FE600832B2E /* HistoryList.swift */; };
+		8F888C672B93701F00832B2E /* HistoryListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C662B93701F00832B2E /* HistoryListItem.swift */; };
+		8F888C6C2B93843F00832B2E /* VideoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C6B2B93843F00832B2E /* VideoButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,13 @@
 		16D319292B922AD700BE36DC /* VideoCaptureTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureTypes.swift; sourceTree = "<group>"; };
 		16D319312B92CFCF00BE36DC /* CoreAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAPIService.swift; sourceTree = "<group>"; };
 		16D319332B92D08D00BE36DC /* CoreAPIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAPIType.swift; sourceTree = "<group>"; };
+		8F888C592B934CE700832B2E /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		8F888C5B2B934CF600832B2E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8F888C5D2B934F0500832B2E /* TranslatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorView.swift; sourceTree = "<group>"; };
+		8F888C602B9359C300832B2E /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
+		8F888C632B936FE600832B2E /* HistoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryList.swift; sourceTree = "<group>"; };
+		8F888C662B93701F00832B2E /* HistoryListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListItem.swift; sourceTree = "<group>"; };
+		8F888C6B2B93843F00832B2E /* VideoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +159,9 @@
 		16D3191A2B92104D00BE36DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8F888C532B934C0900832B2E /* TranslatorView */,
+				8F888C572B934C9400832B2E /* HistoryView */,
+				8F888C582B934CBC00832B2E /* SettingsView */,
 				16D3191D2B92132B00BE36DC /* Camera */,
 				16D318F12B91FE8300BE36DC /* ContentView.swift */,
 			);
@@ -161,6 +178,8 @@
 		16D319202B92228100BE36DC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				8F888C622B936FBE00832B2E /* List */,
+				8F888C5F2B93596D00832B2E /* Tittle */,
 				16D319212B92228E00BE36DC /* GlowButton */,
 			);
 			path = Components;
@@ -206,6 +225,64 @@
 				16D319332B92D08D00BE36DC /* CoreAPIType.swift */,
 			);
 			path = CoreAPI;
+			sourceTree = "<group>";
+		};
+		8F888C532B934C0900832B2E /* TranslatorView */ = {
+			isa = PBXGroup;
+			children = (
+				8F888C5D2B934F0500832B2E /* TranslatorView.swift */,
+			);
+			path = TranslatorView;
+			sourceTree = "<group>";
+		};
+		8F888C572B934C9400832B2E /* HistoryView */ = {
+			isa = PBXGroup;
+			children = (
+				8F888C592B934CE700832B2E /* HistoryView.swift */,
+			);
+			path = HistoryView;
+			sourceTree = "<group>";
+		};
+		8F888C582B934CBC00832B2E /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				8F888C5B2B934CF600832B2E /* SettingsView.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		8F888C5F2B93596D00832B2E /* Tittle */ = {
+			isa = PBXGroup;
+			children = (
+				8F888C602B9359C300832B2E /* Title.swift */,
+			);
+			path = Tittle;
+			sourceTree = "<group>";
+		};
+		8F888C622B936FBE00832B2E /* List */ = {
+			isa = PBXGroup;
+			children = (
+				8F888C6A2B93842600832B2E /* VideoButton */,
+				8F888C652B93700100832B2E /* HistoryListItem */,
+				8F888C632B936FE600832B2E /* HistoryList.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		8F888C652B93700100832B2E /* HistoryListItem */ = {
+			isa = PBXGroup;
+			children = (
+				8F888C662B93701F00832B2E /* HistoryListItem.swift */,
+			);
+			path = HistoryListItem;
+			sourceTree = "<group>";
+		};
+		8F888C6A2B93842600832B2E /* VideoButton */ = {
+			isa = PBXGroup;
+			children = (
+				8F888C6B2B93843F00832B2E /* VideoButton.swift */,
+			);
+			path = VideoButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,12 +415,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F888C672B93701F00832B2E /* HistoryListItem.swift in Sources */,
 				16D3192A2B922AD700BE36DC /* VideoCaptureTypes.swift in Sources */,
 				16D319282B92280400BE36DC /* VideoCaptureService.swift in Sources */,
+				8F888C612B9359C300832B2E /* Title.swift in Sources */,
 				16D319232B9222AD00BE36DC /* GlowButton.swift in Sources */,
 				16D318F22B91FE8300BE36DC /* ContentView.swift in Sources */,
+				8F888C5E2B934F0500832B2E /* TranslatorView.swift in Sources */,
+				8F888C6C2B93843F00832B2E /* VideoButton.swift in Sources */,
+				8F888C642B936FE600832B2E /* HistoryList.swift in Sources */,
+				8F888C5C2B934CF600832B2E /* SettingsView.swift in Sources */,
 				16D318F02B91FE8300BE36DC /* MimuAIApp.swift in Sources */,
 				16D319342B92D08D00BE36DC /* CoreAPIType.swift in Sources */,
+				8F888C5A2B934CE700832B2E /* HistoryView.swift in Sources */,
 				16D319322B92CFCF00BE36DC /* CoreAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

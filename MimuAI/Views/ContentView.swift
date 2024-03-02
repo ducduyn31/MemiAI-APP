@@ -6,36 +6,23 @@
 //
 
 import SwiftUI
-import AVFoundation
 
 struct ContentView: View {
     
     var body: some View {
-        GlowButton(label: "Start") {
-            print("Start")
-            Task {
-                await captureVideo()
-            }
-        }
-    }
-    
-    var isAuthorized: Bool {
-        get async {
-            let status = AVCaptureDevice.authorizationStatus(for: .video)
-            
-            var isAuthorized = status == .authorized
-            
-            if !isAuthorized {
-                isAuthorized = await AVCaptureDevice.requestAccess(for: .video)
-            }
-            
-            return isAuthorized
-        }
-    }
-    
-    func captureVideo() async {
-        guard await isAuthorized else {
-            return
+        TabView {
+            TranslatorView()
+                .tabItem {
+                    Label("Translator", systemImage: "waveform")
+                }
+            HistoryView()
+                .tabItem {
+                    Label("History", systemImage: "clock")
+                }
+            SettingsView()
+                .tabItem {
+                    Label("Settings",
+                          systemImage: "person")}
         }
     }
 }
@@ -43,3 +30,5 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+
