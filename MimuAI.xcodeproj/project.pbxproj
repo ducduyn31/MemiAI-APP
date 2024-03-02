@@ -14,6 +14,11 @@
 		16D319022B91FE8700BE36DC /* MimuAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D319012B91FE8700BE36DC /* MimuAITests.swift */; };
 		16D3190C2B91FE8700BE36DC /* MimuAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3190B2B91FE8700BE36DC /* MimuAIUITests.swift */; };
 		16D3190E2B91FE8700BE36DC /* MimuAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D3190D2B91FE8700BE36DC /* MimuAIUITestsLaunchTests.swift */; };
+		16D319232B9222AD00BE36DC /* GlowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D319222B9222AD00BE36DC /* GlowButton.swift */; };
+		16D319282B92280400BE36DC /* VideoCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D319272B92280400BE36DC /* VideoCaptureService.swift */; };
+		16D3192A2B922AD700BE36DC /* VideoCaptureTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D319292B922AD700BE36DC /* VideoCaptureTypes.swift */; };
+		16D319322B92CFCF00BE36DC /* CoreAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D319312B92CFCF00BE36DC /* CoreAPIService.swift */; };
+		16D319342B92D08D00BE36DC /* CoreAPIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D319332B92D08D00BE36DC /* CoreAPIType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		16D319072B91FE8700BE36DC /* MimuAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimuAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D3190B2B91FE8700BE36DC /* MimuAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimuAIUITests.swift; sourceTree = "<group>"; };
 		16D3190D2B91FE8700BE36DC /* MimuAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimuAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		16D319222B9222AD00BE36DC /* GlowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowButton.swift; sourceTree = "<group>"; };
+		16D319272B92280400BE36DC /* VideoCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureService.swift; sourceTree = "<group>"; };
+		16D319292B922AD700BE36DC /* VideoCaptureTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureTypes.swift; sourceTree = "<group>"; };
+		16D319312B92CFCF00BE36DC /* CoreAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAPIService.swift; sourceTree = "<group>"; };
+		16D319332B92D08D00BE36DC /* CoreAPIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAPIType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +105,11 @@
 		16D318EE2B91FE8300BE36DC /* MimuAI */ = {
 			isa = PBXGroup;
 			children = (
+				16D3192B2B92301600BE36DC /* Helpers */,
+				16D319242B92279600BE36DC /* Services */,
+				16D319202B92228100BE36DC /* Components */,
+				16D3191A2B92104D00BE36DC /* Views */,
 				16D318EF2B91FE8300BE36DC /* MimuAIApp.swift */,
-				16D318F12B91FE8300BE36DC /* ContentView.swift */,
 				16D318F32B91FE8700BE36DC /* Assets.xcassets */,
 				16D318F52B91FE8700BE36DC /* MimuAI.entitlements */,
 				16D318F62B91FE8700BE36DC /* Preview Content */,
@@ -127,6 +140,72 @@
 				16D3190D2B91FE8700BE36DC /* MimuAIUITestsLaunchTests.swift */,
 			);
 			path = MimuAIUITests;
+			sourceTree = "<group>";
+		};
+		16D3191A2B92104D00BE36DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16D3191D2B92132B00BE36DC /* Camera */,
+				16D318F12B91FE8300BE36DC /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		16D3191D2B92132B00BE36DC /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		16D319202B92228100BE36DC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				16D319212B92228E00BE36DC /* GlowButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		16D319212B92228E00BE36DC /* GlowButton */ = {
+			isa = PBXGroup;
+			children = (
+				16D319222B9222AD00BE36DC /* GlowButton.swift */,
+			);
+			path = GlowButton;
+			sourceTree = "<group>";
+		};
+		16D319242B92279600BE36DC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				16D319302B92CFBE00BE36DC /* CoreAPI */,
+				16D319262B9227C900BE36DC /* VideoCapture */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		16D319262B9227C900BE36DC /* VideoCapture */ = {
+			isa = PBXGroup;
+			children = (
+				16D319272B92280400BE36DC /* VideoCaptureService.swift */,
+				16D319292B922AD700BE36DC /* VideoCaptureTypes.swift */,
+			);
+			path = VideoCapture;
+			sourceTree = "<group>";
+		};
+		16D3192B2B92301600BE36DC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		16D319302B92CFBE00BE36DC /* CoreAPI */ = {
+			isa = PBXGroup;
+			children = (
+				16D319312B92CFCF00BE36DC /* CoreAPIService.swift */,
+				16D319332B92D08D00BE36DC /* CoreAPIType.swift */,
+			);
+			path = CoreAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +338,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16D3192A2B922AD700BE36DC /* VideoCaptureTypes.swift in Sources */,
+				16D319282B92280400BE36DC /* VideoCaptureService.swift in Sources */,
+				16D319232B9222AD00BE36DC /* GlowButton.swift in Sources */,
 				16D318F22B91FE8300BE36DC /* ContentView.swift in Sources */,
 				16D318F02B91FE8300BE36DC /* MimuAIApp.swift in Sources */,
+				16D319342B92D08D00BE36DC /* CoreAPIType.swift in Sources */,
+				16D319322B92CFCF00BE36DC /* CoreAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +508,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture sign language";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -462,6 +547,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Capture sign language";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
