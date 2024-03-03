@@ -26,6 +26,9 @@
 		8F888C642B936FE600832B2E /* HistoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C632B936FE600832B2E /* HistoryList.swift */; };
 		8F888C672B93701F00832B2E /* HistoryListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C662B93701F00832B2E /* HistoryListItem.swift */; };
 		8F888C6C2B93843F00832B2E /* VideoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C6B2B93843F00832B2E /* VideoButton.swift */; };
+		8F888C702B93F75C00832B2E /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C6F2B93F75C00832B2E /* UserProfile.swift */; };
+		8F888C732B93F78F00832B2E /* ListSettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C722B93F78F00832B2E /* ListSettingItem.swift */; };
+		8F888C762B9406CF00832B2E /* ListSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C752B9406CF00832B2E /* ListSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		8F888C632B936FE600832B2E /* HistoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryList.swift; sourceTree = "<group>"; };
 		8F888C662B93701F00832B2E /* HistoryListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListItem.swift; sourceTree = "<group>"; };
 		8F888C6B2B93843F00832B2E /* VideoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoButton.swift; sourceTree = "<group>"; };
+		8F888C6F2B93F75C00832B2E /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		8F888C722B93F78F00832B2E /* ListSettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSettingItem.swift; sourceTree = "<group>"; };
+		8F888C752B9406CF00832B2E /* ListSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,7 @@
 		16D319202B92228100BE36DC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				8F888C6D2B93F73600832B2E /* Settings */,
 				8F888C622B936FBE00832B2E /* List */,
 				8F888C5F2B93596D00832B2E /* Tittle */,
 				16D319212B92228E00BE36DC /* GlowButton */,
@@ -262,6 +269,7 @@
 		8F888C622B936FBE00832B2E /* List */ = {
 			isa = PBXGroup;
 			children = (
+				8F888C742B9406B900832B2E /* ListSetting */,
 				8F888C6A2B93842600832B2E /* VideoButton */,
 				8F888C652B93700100832B2E /* HistoryListItem */,
 				8F888C632B936FE600832B2E /* HistoryList.swift */,
@@ -283,6 +291,39 @@
 				8F888C6B2B93843F00832B2E /* VideoButton.swift */,
 			);
 			path = VideoButton;
+			sourceTree = "<group>";
+		};
+		8F888C6D2B93F73600832B2E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8F888C712B93F76B00832B2E /* ListSettings */,
+				8F888C6E2B93F74400832B2E /* Profile */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8F888C6E2B93F74400832B2E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8F888C6F2B93F75C00832B2E /* UserProfile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8F888C712B93F76B00832B2E /* ListSettings */ = {
+			isa = PBXGroup;
+			children = (
+				8F888C722B93F78F00832B2E /* ListSettingItem.swift */,
+			);
+			path = ListSettings;
+			sourceTree = "<group>";
+		};
+		8F888C742B9406B900832B2E /* ListSetting */ = {
+			isa = PBXGroup;
+			children = (
+				8F888C752B9406CF00832B2E /* ListSettings.swift */,
+			);
+			path = ListSetting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,12 +458,15 @@
 			files = (
 				8F888C672B93701F00832B2E /* HistoryListItem.swift in Sources */,
 				16D3192A2B922AD700BE36DC /* VideoCaptureTypes.swift in Sources */,
+				8F888C762B9406CF00832B2E /* ListSettings.swift in Sources */,
+				8F888C702B93F75C00832B2E /* UserProfile.swift in Sources */,
 				16D319282B92280400BE36DC /* VideoCaptureService.swift in Sources */,
 				8F888C612B9359C300832B2E /* Title.swift in Sources */,
 				16D319232B9222AD00BE36DC /* GlowButton.swift in Sources */,
 				16D318F22B91FE8300BE36DC /* ContentView.swift in Sources */,
 				8F888C5E2B934F0500832B2E /* TranslatorView.swift in Sources */,
 				8F888C6C2B93843F00832B2E /* VideoButton.swift in Sources */,
+				8F888C732B93F78F00832B2E /* ListSettingItem.swift in Sources */,
 				8F888C642B936FE600832B2E /* HistoryList.swift in Sources */,
 				8F888C5C2B934CF600832B2E /* SettingsView.swift in Sources */,
 				16D318F02B91FE8300BE36DC /* MimuAIApp.swift in Sources */,

@@ -35,10 +35,11 @@ struct Title: View {
                 .padding()
             }
         }
-        .frame(maxHeight: 170)
+        .frame(height: 170)
     }
 }
 
 #Preview {
     Title(label: "Title")
 }
+
