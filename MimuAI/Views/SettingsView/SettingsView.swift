@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct SettingsView: View {
-        let mockSettings: [ListSettingSession] = [
-            ListSettingSession(imageName: "person.crop.circle", titleMessage: "Account"),
-            ListSettingSession(imageName: "hand.thumbsup.circle", titleMessage: "Subscriptions"),
-            ListSettingSession(imageName: "note.text", titleMessage: "Privacy & Policies"),
-            ListSettingSession(imageName: "exclamationmark.circle.fill", titleMessage: "About Memu"),
-        ]
-        
-        var body: some View {
+    @AppStorage("name") var name: String = "Anna Lee"
+    
+    let mockSettings: [ListSettingSession] = [
+        ListSettingSession(imageName: "person.crop.circle", titleMessage: "Account", screen: .account),
+        ListSettingSession(imageName: "hand.thumbsup.circle", titleMessage: "Subscriptions", screen: .subscription),
+        ListSettingSession(imageName: "note.text", titleMessage: "Privacy & Policies", screen: .privacy),
+        ListSettingSession(imageName: "exclamationmark.circle.fill", titleMessage: "About Memu", screen: .about),
+    ]
+    
+    var body: some View {
+        NavigationStack{
             ZStack {
                 VStack {
                     HStack {
@@ -24,7 +27,7 @@ struct SettingsView: View {
                             .frame(width:64,height:64)
                             .clipShape(.circle)
                             .padding()
-                        Text("Anna Lee")
+                        Text(name)
                             .font(.headline)
                             .foregroundColor(.black)
                             .fontWeight(.semibold)
@@ -44,7 +47,8 @@ struct SettingsView: View {
             .ignoresSafeArea()
         }
     }
+}
 
-     #Preview {
-        SettingsView()
-    }
+#Preview {
+    SettingsView()
+}

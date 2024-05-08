@@ -29,6 +29,13 @@
 		8F888C702B93F75C00832B2E /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C6F2B93F75C00832B2E /* UserProfile.swift */; };
 		8F888C732B93F78F00832B2E /* ListSettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C722B93F78F00832B2E /* ListSettingItem.swift */; };
 		8F888C762B9406CF00832B2E /* ListSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C752B9406CF00832B2E /* ListSettings.swift */; };
+		CE4D183D2BEB5285009DD421 /* EditAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D183C2BEB5285009DD421 /* EditAccountView.swift */; };
+		CE4D18402BEB5964009DD421 /* EditAccountItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D183F2BEB5964009DD421 /* EditAccountItem.swift */; };
+		CE4D18432BEB60EB009DD421 /* SimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D18422BEB60EB009DD421 /* SimpleButton.swift */; };
+		CE4D18462BEB75B2009DD421 /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D18452BEB75B2009DD421 /* CustomNavBarView.swift */; };
+		CE4D18482BEB7712009DD421 /* CustomNavBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D18472BEB7712009DD421 /* CustomNavBarContainerView.swift */; };
+		CE4D184A2BEB7A1C009DD421 /* CustomNavLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D18492BEB7A1C009DD421 /* CustomNavLink.swift */; };
+		CE4D184C2BEB9733009DD421 /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D184B2BEB9733009DD421 /* SubscriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +82,13 @@
 		8F888C6F2B93F75C00832B2E /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		8F888C722B93F78F00832B2E /* ListSettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSettingItem.swift; sourceTree = "<group>"; };
 		8F888C752B9406CF00832B2E /* ListSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSettings.swift; sourceTree = "<group>"; };
+		CE4D183C2BEB5285009DD421 /* EditAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountView.swift; sourceTree = "<group>"; };
+		CE4D183F2BEB5964009DD421 /* EditAccountItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountItem.swift; sourceTree = "<group>"; };
+		CE4D18422BEB60EB009DD421 /* SimpleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleButton.swift; sourceTree = "<group>"; };
+		CE4D18452BEB75B2009DD421 /* CustomNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarView.swift; sourceTree = "<group>"; };
+		CE4D18472BEB7712009DD421 /* CustomNavBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarContainerView.swift; sourceTree = "<group>"; };
+		CE4D18492BEB7A1C009DD421 /* CustomNavLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavLink.swift; sourceTree = "<group>"; };
+		CE4D184B2BEB9733009DD421 /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +198,8 @@
 		16D319202B92228100BE36DC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CE4D18442BEB758B009DD421 /* NavBar */,
+				CE4D18412BEB608A009DD421 /* SimpleButton */,
 				8F888C6D2B93F73600832B2E /* Settings */,
 				8F888C622B936FBE00832B2E /* List */,
 				8F888C5F2B93596D00832B2E /* Tittle */,
@@ -254,6 +270,8 @@
 			isa = PBXGroup;
 			children = (
 				8F888C5B2B934CF600832B2E /* SettingsView.swift */,
+				CE4D183C2BEB5285009DD421 /* EditAccountView.swift */,
+				CE4D184B2BEB9733009DD421 /* SubscriptionView.swift */,
 			);
 			path = SettingsView;
 			sourceTree = "<group>";
@@ -296,6 +314,7 @@
 		8F888C6D2B93F73600832B2E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				CE4D183E2BEB5945009DD421 /* EditAccount */,
 				8F888C712B93F76B00832B2E /* ListSettings */,
 				8F888C6E2B93F74400832B2E /* Profile */,
 			);
@@ -324,6 +343,32 @@
 				8F888C752B9406CF00832B2E /* ListSettings.swift */,
 			);
 			path = ListSetting;
+			sourceTree = "<group>";
+		};
+		CE4D183E2BEB5945009DD421 /* EditAccount */ = {
+			isa = PBXGroup;
+			children = (
+				CE4D183F2BEB5964009DD421 /* EditAccountItem.swift */,
+			);
+			path = EditAccount;
+			sourceTree = "<group>";
+		};
+		CE4D18412BEB608A009DD421 /* SimpleButton */ = {
+			isa = PBXGroup;
+			children = (
+				CE4D18422BEB60EB009DD421 /* SimpleButton.swift */,
+			);
+			path = SimpleButton;
+			sourceTree = "<group>";
+		};
+		CE4D18442BEB758B009DD421 /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+				CE4D18452BEB75B2009DD421 /* CustomNavBarView.swift */,
+				CE4D18472BEB7712009DD421 /* CustomNavBarContainerView.swift */,
+				CE4D18492BEB7A1C009DD421 /* CustomNavLink.swift */,
+			);
+			path = NavBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,14 +510,21 @@
 				16D319232B9222AD00BE36DC /* GlowButton.swift in Sources */,
 				16D318F22B91FE8300BE36DC /* ContentView.swift in Sources */,
 				8F888C5E2B934F0500832B2E /* TranslatorView.swift in Sources */,
+				CE4D183D2BEB5285009DD421 /* EditAccountView.swift in Sources */,
 				8F888C6C2B93843F00832B2E /* VideoButton.swift in Sources */,
 				8F888C732B93F78F00832B2E /* ListSettingItem.swift in Sources */,
 				8F888C642B936FE600832B2E /* HistoryList.swift in Sources */,
+				CE4D184A2BEB7A1C009DD421 /* CustomNavLink.swift in Sources */,
 				8F888C5C2B934CF600832B2E /* SettingsView.swift in Sources */,
 				16D318F02B91FE8300BE36DC /* MimuAIApp.swift in Sources */,
 				16D319342B92D08D00BE36DC /* CoreAPIType.swift in Sources */,
+				CE4D184C2BEB9733009DD421 /* SubscriptionView.swift in Sources */,
 				8F888C5A2B934CE700832B2E /* HistoryView.swift in Sources */,
 				16D319322B92CFCF00BE36DC /* CoreAPIService.swift in Sources */,
+				CE4D18462BEB75B2009DD421 /* CustomNavBarView.swift in Sources */,
+				CE4D18482BEB7712009DD421 /* CustomNavBarContainerView.swift in Sources */,
+				CE4D18402BEB5964009DD421 /* EditAccountItem.swift in Sources */,
+				CE4D18432BEB60EB009DD421 /* SimpleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
