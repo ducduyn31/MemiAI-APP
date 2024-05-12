@@ -29,6 +29,10 @@
 		8F888C702B93F75C00832B2E /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C6F2B93F75C00832B2E /* UserProfile.swift */; };
 		8F888C732B93F78F00832B2E /* ListSettingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C722B93F78F00832B2E /* ListSettingItem.swift */; };
 		8F888C762B9406CF00832B2E /* ListSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F888C752B9406CF00832B2E /* ListSettings.swift */; };
+		949DA7412BEF561C008F12B5 /* H264Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949DA73F2BEF561C008F12B5 /* H264Encoder.swift */; };
+		949DA7442BEF5647008F12B5 /* VideoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949DA7422BEF5647008F12B5 /* VideoCaptureView.swift */; };
+		949DA7452BEF5647008F12B5 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949DA7432BEF5647008F12B5 /* CameraView.swift */; };
+		94E962672BF115FC00CD7DDA /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E962662BF115FC00CD7DDA /* AboutView.swift */; };
 		CE4D183D2BEB5285009DD421 /* EditAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D183C2BEB5285009DD421 /* EditAccountView.swift */; };
 		CE4D18402BEB5964009DD421 /* EditAccountItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D183F2BEB5964009DD421 /* EditAccountItem.swift */; };
 		CE4D18432BEB60EB009DD421 /* SimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4D18422BEB60EB009DD421 /* SimpleButton.swift */; };
@@ -82,6 +86,10 @@
 		8F888C6F2B93F75C00832B2E /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		8F888C722B93F78F00832B2E /* ListSettingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSettingItem.swift; sourceTree = "<group>"; };
 		8F888C752B9406CF00832B2E /* ListSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSettings.swift; sourceTree = "<group>"; };
+		949DA73F2BEF561C008F12B5 /* H264Encoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = H264Encoder.swift; sourceTree = "<group>"; };
+		949DA7422BEF5647008F12B5 /* VideoCaptureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCaptureView.swift; sourceTree = "<group>"; };
+		949DA7432BEF5647008F12B5 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		94E962662BF115FC00CD7DDA /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		CE4D183C2BEB5285009DD421 /* EditAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountView.swift; sourceTree = "<group>"; };
 		CE4D183F2BEB5964009DD421 /* EditAccountItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountItem.swift; sourceTree = "<group>"; };
 		CE4D18422BEB60EB009DD421 /* SimpleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleButton.swift; sourceTree = "<group>"; };
@@ -191,6 +199,8 @@
 		16D3191D2B92132B00BE36DC /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				949DA7432BEF5647008F12B5 /* CameraView.swift */,
+				949DA7422BEF5647008F12B5 /* VideoCaptureView.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -237,6 +247,7 @@
 		16D3192B2B92301600BE36DC /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				949DA7402BEF561C008F12B5 /* H264Encoder */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -272,6 +283,7 @@
 				8F888C5B2B934CF600832B2E /* SettingsView.swift */,
 				CE4D183C2BEB5285009DD421 /* EditAccountView.swift */,
 				CE4D184B2BEB9733009DD421 /* SubscriptionView.swift */,
+				94E962662BF115FC00CD7DDA /* AboutView.swift */,
 			);
 			path = SettingsView;
 			sourceTree = "<group>";
@@ -343,6 +355,14 @@
 				8F888C752B9406CF00832B2E /* ListSettings.swift */,
 			);
 			path = ListSetting;
+			sourceTree = "<group>";
+		};
+		949DA7402BEF561C008F12B5 /* H264Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				949DA73F2BEF561C008F12B5 /* H264Encoder.swift */,
+			);
+			path = H264Encoder;
 			sourceTree = "<group>";
 		};
 		CE4D183E2BEB5945009DD421 /* EditAccount */ = {
@@ -509,9 +529,12 @@
 				8F888C612B9359C300832B2E /* Title.swift in Sources */,
 				16D319232B9222AD00BE36DC /* GlowButton.swift in Sources */,
 				16D318F22B91FE8300BE36DC /* ContentView.swift in Sources */,
+				94E962672BF115FC00CD7DDA /* AboutView.swift in Sources */,
 				8F888C5E2B934F0500832B2E /* TranslatorView.swift in Sources */,
 				CE4D183D2BEB5285009DD421 /* EditAccountView.swift in Sources */,
 				8F888C6C2B93843F00832B2E /* VideoButton.swift in Sources */,
+				949DA7442BEF5647008F12B5 /* VideoCaptureView.swift in Sources */,
+				949DA7412BEF561C008F12B5 /* H264Encoder.swift in Sources */,
 				8F888C732B93F78F00832B2E /* ListSettingItem.swift in Sources */,
 				8F888C642B936FE600832B2E /* HistoryList.swift in Sources */,
 				CE4D184A2BEB7A1C009DD421 /* CustomNavLink.swift in Sources */,
@@ -520,6 +543,7 @@
 				16D319342B92D08D00BE36DC /* CoreAPIType.swift in Sources */,
 				CE4D184C2BEB9733009DD421 /* SubscriptionView.swift in Sources */,
 				8F888C5A2B934CE700832B2E /* HistoryView.swift in Sources */,
+				949DA7452BEF5647008F12B5 /* CameraView.swift in Sources */,
 				16D319322B92CFCF00BE36DC /* CoreAPIService.swift in Sources */,
 				CE4D18462BEB75B2009DD421 /* CustomNavBarView.swift in Sources */,
 				CE4D18482BEB7712009DD421 /* CustomNavBarContainerView.swift in Sources */,
@@ -684,7 +708,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MimuAI/Preview Content\"";
-				DEVELOPMENT_TEAM = C4A2XPYW33;
+				DEVELOPMENT_TEAM = B327V35KZM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -704,7 +728,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.coffeewithegg.MimuAI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coffeewithegg123.MimuAI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -723,7 +747,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MimuAI/Preview Content\"";
-				DEVELOPMENT_TEAM = C4A2XPYW33;
+				DEVELOPMENT_TEAM = B327V35KZM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -743,7 +767,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.coffeewithegg.MimuAI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coffeewithegg123.MimuAI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
